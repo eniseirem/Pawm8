@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "989364940963",
+    "firebase_url": "https://pawmate-1040a.firebaseio.com",
+    "project_id": "pawmate-1040a",
+    "storage_bucket": "pawmate-1040a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989364940963:android:79436e5387b51d0f",
+        "android_client_info": {
+          "package_name": "com.example.alper.pawmate3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989364940963-jeltm6tmgnl0tr4sv7pt9deha3ndactg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl6uOA7S7WVufyJvrBrIb26lLlQT5i7Gg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

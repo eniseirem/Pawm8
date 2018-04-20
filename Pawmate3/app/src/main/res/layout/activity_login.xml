@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.alper.pawmate3.Login"
-    android:background="#fff">
+    android:background="#fff"
+    tools:context="com.example.alper.pawmate3.Login">
 
     <EditText
         android:id="@+id/emailInput"
@@ -22,30 +22,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/usercode"
-        android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="Usercode*"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailInput" />
-
     <TextView
         android:id="@+id/signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="199dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
         android:text="@string/signUp"
         android:textColor="@color/colorBlueish"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usercode" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordIn" />
 
     <TextView
         android:id="@+id/forgotPw"
@@ -86,20 +73,39 @@
 
     <TextView
         android:id="@+id/exp2"
-        android:layout_width="325dp"
+        android:layout_width="0dp"
         android:layout_height="35dp"
+        android:layout_marginEnd="1dp"
         android:layout_marginTop="36dp"
         android:text='*"Usercode" will be sent to your email address when your membership is approved.'
-        app:layout_constraintTop_toBottomOf="@+id/loginB"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintEnd_toEndOf="@+id/loginB"
+        app:layout_constraintStart_toStartOf="@+id/exp1"
+        app:layout_constraintTop_toBottomOf="@+id/loginB" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="149dp"
+        android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/pawmate"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/exp2" />
+        app:layout_constraintTop_toBottomOf="@+id/signUp" />
+
+    <EditText
+        android:id="@+id/passwordIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="93dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/signUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
 

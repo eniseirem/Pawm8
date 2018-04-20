@@ -6,4 +6,30 @@
     android:layout_height="match_parent"
     tools:context="com.example.alper.pawmate3.Explan1">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="151dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/pawmate" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        android:autoSizeMaxTextSize="25dp"
+        android:text="Pawmate is an app that solely works on finding the best home for our homeless little friends. Safety is our number one priorty. We make everything easier and better for our little friends to find their new homes. With Pawmate they will find appropriate standards of living and prolong a happy life. "
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Info"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

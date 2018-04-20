@@ -16,4 +16,9 @@
     <string name="signUp">"<u>Sorry I'm new.</u>"</string>
     <string name="forgotPw">"<u>I forgot something please let me in.</u>"</string>
     <string name="exp1">"<u>Who are you people?</u>"</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
