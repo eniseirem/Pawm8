@@ -21,4 +21,15 @@
     <string name="e_mail">E-mail</string>
     <string name="password">Password</string>
     <string name="sign_up">Sign Up</string>
+
+    <string-array name="sex_arrays">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="date_arrays">
+        <item>Years</item>
+        <item>Months</item>
+        <item>Days</item>
+    </string-array>
+
 </resources>

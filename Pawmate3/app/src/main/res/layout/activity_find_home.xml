@@ -63,7 +63,7 @@
     <TextView
         android:id="@+id/textView7"
         android:layout_width="120dp"
-        android:layout_height="35dp"
+        android:layout_height="39dp"
         android:layout_marginStart="32dp"
         android:text="Coat :"
         android:textAppearance="@style/TextAppearance.AppCompat"
@@ -73,97 +73,144 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="94dp"
+        android:id="@+id/spinner1"
+        android:layout_width="120dp"
         android:layout_height="35dp"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="102dp" />
+        android:entries="@array/sex_arrays"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/speciesIn" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/speciesIn"
         android:layout_width="163dp"
-        android:layout_height="34dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="68dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/dateIn"
         android:layout_width="85dp"
-        android:layout_height="36dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="137dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="112dp"
+        android:layout_width="129dp"
         android:layout_height="37dp"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="137dp" />
+        android:entries="@array/date_arrays"
+        app:layout_constraintStart_toEndOf="@+id/dateIn"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/coatIn"
         android:layout_width="183dp"
-        android:layout_height="37dp"
+        android:layout_height="46dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="172dp" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add pics"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="227dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="112dp"
         android:text="Health Conditions of Cat"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="272dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coatIn" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="206dp"
-        android:layout_height="30dp"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="297dp" />
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Vaccination against Rabies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="207dp"
-        android:layout_height="35dp"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="327dp" />
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Exoparasite treatment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <CheckBox
         android:id="@+id/checkBox3"
-        android:layout_width="210dp"
+        android:layout_width="207dp"
         android:layout_height="35dp"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="362dp" />
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Bla bla blaa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
 
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="207dp"
         android:layout_height="34dp"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="397dp" />
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="blaa bla blaaa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="save"
+        android:text="Save"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/getImage"
+        android:layout_width="235dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="224dp"
+        android:onClick="chooseImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pawmate" />
+
 
 </android.support.constraint.ConstraintLayout>
